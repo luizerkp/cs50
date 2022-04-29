@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<!--checked and complete everything green as of 07/02/21-->
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // source https://www.w3schools.com/howto/howto_css_modal_images.asp
+                // Get the modal
+                var modal = document.getElementById("this-modal");
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementsByClassName("this-img");
+                var modalImg = document.getElementById("img-modal-view");
+                var captionText = document.getElementById("caption");
+                for(var i = 0; i< img.length; i++){
+                    img[i].onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;};
+                }
+                var span = document.getElementsByClassName("close")[0];
+                span.onclick = function() {
+                modal.style.display = "none";};
+            });
+        </script>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Japan</title>
+    </head>
+    <body class="jumbotron jumbotron-fluid">
+        <header>
+            <div class="container" style="margin-bottom:0px">
+                <img id="header" src="images/header_final.png" title="header">
+            </div>
+            <nav>
+                <!-- main nav menu -->
+                <ul class="menu">
+                    <li><a class="nav-bar" href="index.html">Home</a></li>
+                    <li><a class="nav-bar" href="Thai.html">Thailand</a></li>
+                    <li><a class="nav-bar" href="DR.html">Dominican Republic</a></li>
+                    <li><a class="nav-bar" href="Japan.html">Japan</a></li>
+                    <li><a class="nav-bar" href="Mex.html">Mexico</a></li>
+                    <li><a class="nav-bar" href="USA.html">USA</a></li>
+                    <li><a class="nav-bar" href="Tips.html">Tips & Tricks</a></li>
+                    <li><a class="nav-bar" href="Bio.html">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container" style="text-align:center">
+                <br>
+                <h2 class="display-4">Kon'nichiwa!!</h2>
+                <hr>
+                <p>Japan is an Island country that boast a rich history deeply rooted in tradition. It features beautiful mountains with the most famous being Mt. Fuji. It Also
+                feature a host of unique islands like Rabbit Island, an Island populated by more rabbits than people, or Ao Island also known as Nekojima to the locals and "cat Island
+                to foreigners. This island cat population outnumber humans by a ration of 6 to 1. When it comes to food, this goes without saying but you won't find better sushi than
+                in its birth country. Food in Japan is experience that deeply recommend you get out of your comfort zone and experience as much of it as you can. From Ramen and seafood
+                to steak and even more adventurous offerings like horse meat Sashimi, Japan has something great to offer to anyone not matter your comfort level. The great thing about
+                japan is that it boasts one the most reliable and cleanest train systems in the world, this means that you can stay in Tokyo take a one day trip to see Mt Fuji and come
+                back to Tokyo all by train. While visiting Japan unless you are in you of the smaller islands or in the more remote rural areas then you do not need Uber or taxi to move
+                around efficiently. So don't be afraid go forth and explore.</p>
+            </div>
+            <hr>
+            <div class="container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WLIv7HnZ_fE" title="YouTube video player" allow="accelerometer;
+                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <hr>
+            <div class="container" style="text-align:center">
+                <h3>Preparing to visit Japan</h3>
+                <p>If you want to visit Japan, you first need to find out whether you can get a visa on arrival or you need to apply for one in advance. To find out more visit the
+                <a href= "https://www.mofa.go.jp/j_info/visit/visa/index.html" target="_blank"> The Ministry of Foreign affairs of Japan's website</a>  for the most up to date information on visa
+                requirements and application process. I recommend ensuring your passport does not expire within 6 months and to apply for the visa, if needed, no less than 45 days
+                before you depart. US citizens can get a visa on arrival that last for up to 90 days thus do not need to apply before when visiting for tourism purpose.</p>
+            </div>
+            <hr>
+            <div class="container">
+                <p><img src="images/Japan/jp-001.webp" style="width:100%; height:75%" alt=" the beach at Saona Island in Dominican Republic"></p>
+            </div>
+            <p style="text-align:center; font-size:14px; font-style:italic">Tokyo Tower <br> Photo by
+                <a href="https://unsplash.com/@marekokon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marek Okon </a>on
+                <a href="https://unsplash.com/s/photos/japan-tokyo-tower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank"> Unsplash</a></p>
+            <hr>
+            <div class="container" style="text-align:center">
+                <h3>Planning the Trip:</h3>
+                <P>The first thing you will want to do is to buy an airline ticket to Narita(NRT) or Haneda(HND); I have found <a href="https://www.skyscanner.com/" target="_blank">Skyscanner</a> to
+                be very useful in getting the best deals on airfare, otherwise you can try the other big names like <a href="https://www.expedia.com/" target="_blank">Expedia</a> or
+                <a href="https://www.priceline.com/?vrid=f8e7a0a23eafb4bae1821e9f0bd49f1b" target="_blank">Priceline</a>. Which ever airport you use both have easy access to Tokyo and
+                to transportation from one airport to the other. Therefore, if you find a great airfare deal but you arrive at HND and depart from NRT don't be
+                afraid and take it. Before you leave the airport you will want to get a few things the first one is a mobile hotspot or sim navigating Japan will be a lot
+                easier with internet access. The second thing you will want is a map of the railway system and take the time to plan out your route. It is highly recommended
+                that you reserve the mobile hotspot/sim ahead of tike and to download the railway map before you arrive in Japan. The rail way map of Japan is huge, intimidating and
+                can be a bit complicated but by the end of day one you will be an expert. From Tokyo you can take a train to most of the sightseeing destinations in Japan. On your
+                first trip I recommend to take the shinaknsen (bullet train) to see Mt. Fuji for a day or two or if you fly into HND then you can take a coach bus. After return to Tokyo
+                to explore the famous Tsukiji fish market to watch the tuna  auctions at 5am, Akihabara for Anime lover, Sensoji Temple, Kawagoe to try  on traditional Japanese
+                clothing like a Yukata, DiverCity in Odaiba to see the giant Gundam and of course eat your way into poverty while exploring. As an optional route you can go shopping
+                in Shinjuku, Shibuya or Ginza as well. Last but not least you should try out go karting in the streets of Tokyo at night although you can no longer dress as a Mario Kart
+                real life character anymore after the Nintendo lawsuit. If you still want to test your go karting skills in Tokyo, please remember to obtain an international driving
+                License before arriving in Japan or you won't be allowed to drive. You should plan to stay in Tokyo for 3 days minimum. If you have an extra day or two; I'd highly
+                recommend visiting Nikko a small city located roughly a 2 hour train ride north of Tokyo. The city is filled with beautiful naturescapes and shrines. This will serve
+                as way to get way from the hustle and bustle of Tokyo. Japan offers many more interesting locations not mentioned here, so go forth and explore.</p>
+            </div>
+            <hr>
+            <div class="container" style="text-align:center">
+                <h3 style="font-weight:bold">Gallery</h3>
+                <p style="font-style:italic; font-size:.85em">All images not taken by me are duly credited under each image</p>
+            </div>
+            <div class="row-container">
+                <div class="column">
+                        <img class="this-img" src="images/Japan/jp-rail.jpg" style="width:100%" alt="The Tokyo Railway Map">
+                        <figure>
+                            <img class="this-img" src="images/Japan/jp-013.webp" style="width:100%" alt="A sushi chef preparing sushi">
+                                <figcaption>
+                                    Photo by <a href="https://unsplash.com/@thomas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Thomas Marban </a>on
+                                    <a href="https://unsplash.com/s/photos/tokyo-japan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank"> Unsplash</a>
+                                </figcaption>
+                        </figure>
+                        <img class="this-img" src="images/Japan/jp-009.webp"  style="width:100%" alt="Different pieces of delicious looking sushi">
+                        <img class="this-img" src="images/Japan/jp-007.webp" style="width:100%" alt="Fish grilling in on open flame">
+                </div>
+                <div class="column">
+                        <img class="this-img" src="images/Japan/jp-012.webp" style="width:100%" alt="A woman in traditional Japanese Yukata">
+                        <img class="this-img" src="images/Japan/jp-008.webp" style="width:100%" alt="Japanese store front">
+                        <figure>
+                            <img class="this-img" src="images/Japan/jp-015.webp" style="width:100%" alt="People riding on pedal boats in a river amidst Japanese cherry blossom">
+                                <figcaption>
+                                    Photo by <a href="https://unsplash.com/@yukato?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yu Kato </a>on
+                                    <a href="https://unsplash.com/s/photos/tokyo-japan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank"> Unsplash</a>
+                                </figcaption>
+                        </figure>
+                        <img class="this-img" src="images/Japan/jp-010.webp" style="width:100%" alt="A train moving through a city at night">
+                </div>
+                <div class="column">
+                        <img class="this-img" src="images/Japan/jp-003.webp" style="width:100%" alt="A woman amongs colorful autumn trees during night-time">
+                        <img class="this-img" src="images/Japan/jp-004.webp" style="width:100%" alt="Road during late afternoon with colorful autumn trees on each side">
+                        <img class="this-img" src="images/Japan/jp-005.webp"  style="width:100%" alt="Decorative sake barrels also known as kazaridaru in a Japanese shrine">
+                        <img class="this-img" src="images/Japan/jp-006.webp"  style="width:100%" alt="A cable car going up a mountain side">
+                </div>
+                <div class="column">
+                        <img class="this-img" src="images/Japan/jp-002.webp" style="width:100%" alt="Room with Japanese low table, chairs and cushions">
+                        <img class="this-img" src="images/Japan/jp-011.webp" style="width:100%" alt="Old Japanese town">
+                        <figure>
+                            <img class="this-img" src="images/Japan/jp-014.webp" style="width:100%" alt="The famous busy crosswalk in Shinjuku, Japan">
+                                <figcaption>
+                                    Photo by <a href="https://unsplash.com/@magict1911?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Timo Volz </a>on
+                                    <a href="https://unsplash.com/s/photos/japan-tokyo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank"> Unsplash</a>
+                                </figcaption>
+                        </figure>
+                        <img class="this-img" src="images/Japan/jp-016.webp" style="width:100%" alt="The City at nigtht and its reflection on lake kawaguchiko, Japan">
+                </div>
+            </div>
+            <div id="this-modal" class="modal">
+              <span class="close">&times;</span>
+                <img class="modal-content" id="img-modal-view" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="the alt text of the image that was clicked">
+                <div id="caption"></div>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Luis Tamarez All Rights Reserved</p>
+        </footer>
+    </body>
+</html>

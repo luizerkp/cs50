@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<!--checked and complete everything green as of 6/24/21-->
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // source https://www.w3schools.com/howto/howto_css_modal_images.asp
+                // Get the modal
+                var modal = document.getElementById("this-modal");
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementsByClassName("this-img");
+                var modalImg = document.getElementById("img-modal-view");
+                var captionText = document.getElementById("caption");
+                for(var i = 0; i< img.length; i++){
+                    img[i].onclick = function(){
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;};
+                }
+                var span = document.getElementsByClassName("close")[0];
+                span.onclick = function() {
+                modal.style.display = "none";};
+            });
+        </script>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dominican Republic</title>
+    </head>
+    <body class="jumbotron jumbotron-fluid">
+        <header>
+            <div class="container" style="margin-bottom:0px">
+                <img id="header" src="images/header_final.png" title="header">
+            </div>
+            <nav>
+                <!-- main nav menu -->
+                <ul class="menu">
+                    <li><a class="nav-bar" href="index.html">Home</a></li>
+                    <li><a class="nav-bar" href="Thai.html">Thailand</a></li>
+                    <li><a class="nav-bar" href="DR.html">Dominican Republic</a></li>
+                    <li><a class="nav-bar" href="Japan.html">Japan</a></li>
+                    <li><a class="nav-bar" href="Mex.html">Mexico</a></li>
+                    <li><a class="nav-bar" href="USA.html">USA</a></li>
+                    <li><a class="nav-bar" href="Tips.html">Tips & Tricks</a></li>
+                    <li><a class="nav-bar" href="Bio.html">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container" style="text-align:center">
+                <br>
+                <h2 class="display-4">Hola!!</h2>
+                <hr>
+                <p>The Dominican Republic is a wonderfully vibrant country, full of hearty people who love dancing and music which are a big part of the country's history and
+                culture. From the beautiful beaches to it's long history, this small island has a lot to offer. The country features beautiful and luxurious all inclusive resorts
+                in Puta Cana, one the main tourist destinations. It also offers rich history and art in the  Zona Clonial, Santo Domingo. If you are looking for smaller crowds than
+                in Punta Cana, you can try Playa Dorada, which translates to "golden beach" for its sand color. If feeling more adventurous why not take a trip to Saona Island, a
+                beautiful small 42.47mi² island off Southeast coast of DR. The DR also offers some spectacular whale watching tours in Samaná Bay. You can also visit some impressive
+                waterfalls of Damajagua in Puerto Plata or El Salto Limon Waterfall in Samaná. If the mountains are more your thing then take an adventure in Jarabacoa where it mountainous
+                terrain make for some impressive hiking, biking and rafting. The DR is fast becoming one of the top tourist destinations of the Caribbean sea and for good reason; awesome
+                food, party that never stops, drinks for the adults and awesome adventures for the kids all make this a place well worth visiting for the entire family.</p>
+            </div>
+            <hr>
+            <div class="container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/F-uPHbfznlM" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <hr>
+            <div class="container" style="text-align:center">
+                <h3>Preparing to Visiting Dominican Republic:</h3>
+                <p>If you want to visit The Dominican Republic you first need to find out whether you can get a visa on arrival or you need to apply for one in advance. To find out more visit the
+                <a href= "http://www.domrep.org/visa.html" target="_blank"> Dominican Consulate website</a>  for the most up to date information on visa requirements and application
+                process. I recommend ensuring your passport does not expire within 6 months and to apply for the visa, if needed, no less than 45 days before you depart. The process takes
+                about two weeks but you want to have some wiggle room in the event of any mishaps or delays. If are a citizen or have a visa
+                to the US, EU, or UK you can get a visa on arrival and do not need to apply for one beforehand.</p>
+            </div>
+            <hr>
+            <div class="container">
+                <p><img src="images/Dom-Rep/dr-020.webp" style="width:100%; height:75%" alt=" a coconut tree sprout on the beach at Saona Island in Dominican Republic"></p>
+            </div>
+            <p style="text-align:center; font-size:14px; font-style:italic">Saona Island Photo by
+                <a href="https://unsplash.com/@rachidnl?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                Rachid Oucharia</a> on <a href="https://unsplash.com/s/photos/saona-island?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a></p>
+            <hr>
+            <div class="container" style="text-align:center">
+                <h3>Planning the Trip:</h3>
+                <P>The first thing you will want to do is to buy an airline ticket to Las Américas International Airport (SDQ) or to
+                Punta Cana International Airport. Note that it can be cheaper to travel to SDQ and then take a transfer over to your
+                final destination. For first time or inexperienced travelers; I recommend giving one for the all inclusive resorts
+                a visit. They make it quite easy to either stay and enjoy the wonderful private breaches, the food and the drinks.
+                Some resorts even come with their own mini-water parks, fun for the whole family. I have found
+                <a href="https://www.skyscanner.com/" target="_blank">Skyscanner</a> to be very useful in getting the best deals on airfare,
+                otherwise you can try the other big names like <a href="https://www.expedia.com/" target="_blank">Expedia</a> or
+                <a href="https://www.priceline.com/?vrid=f8e7a0a23eafb4bae1821e9f0bd49f1b" target="_blank">Priceline</a>. An alternative to big
+                hotels are the private villas you can rent; these place a glamorous mansion style place where can stay in privacy
+                and comfort. Some will even provide service staff like chefs and maids. The downside is these options tend to much more expensive
+                than a traditional hotel or resort. Whichever route you go the Dominican Republic will make you want to come back to see
+                more of this Island paradise.</p>
+            </div>
+            <hr>
+            <div class="container" style="text-align:center">
+                <h3 style="font-weight:bold">Gallery</h3>
+                <p style="font-style:italic; font-size:.85em">All images not taken by me are duly credited under each image</p>
+            </div>
+            <div class="row-container">
+                <div class="column">
+                    <img class="this-img" src="images/Dom-Rep/dr-001.webp" style="width:100%" alt="Looking through an Airplane Window down at a small island">
+                    <img class="this-img" src="images/Dom-Rep/dr-002.webp" style="width:100%" alt="Mansion with giant #27 belonging to famous baseball player Vladimir Guerrero in Don Gregorio, Dominican Republic">
+                    <img class="this-img" src="images/Dom-Rep/dr-003.webp"  style="width:100%" alt="Couple on a sunny day in Punta Cana beach">
+                    <img class="this-img" src="images/Dom-Rep/dr-004.webp" style="width:100%" alt="Water slide in the exclusive water park at Sirenis Resort">
+                </div>
+                <div class="column">
+                    <img class="this-img" src="images/Dom-Rep/dr-005.webp" style="width:100%" alt="Coconut tree and beach chairs on a sunny relaxing day in Punta Cana">
+                    <figure>
+                        <img class="this-img" src="images/Dom-Rep/dr-019.webp" style="width:100%" alt="Coconut trees along the beach shore from high vanatage point in Dominican Republic">
+                            <figcaption>
+                                Photo by <a href="https://unsplash.com/@vorosbenisop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Benjamin Voros</a>
+                                on <a href="https://unsplash.com/s/photos/dominican-republic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+                            </figcaption>
+                    </figure>
+                    <img class="this-img" src="images/Dom-Rep/dr-007.webp" style="width:100%" alt="Punta Cana beach, Dominican Republic">
+                    <img class="this-img" src="images/Dom-Rep/dr-008.webp" style="width:100%" alt="Cabanas on at Sirenis Resort in Punta Cana">
+                </div>
+                <div class="column">
+                    <img class="this-img" src="images/Dom-Rep/dr-009.webp" style="width:100%" alt="The entrance to CoCo Bongo night club in Punta Cana, Dominican Republic">
+                    <img class="this-img" src="images/Dom-Rep/dr-010.webp" style="width:100%" alt="Show in CoCo Bongo night club in Punta Cana, Dominican Republic">
+                    <figure>
+                        <img class="this-img" src="images/Dom-Rep/dr-014.webp" style="width:100%" alt="Jungle treehouse in Samana, Dominican Republic">
+                            <figcaption>
+                                Photo by <a href="https://unsplash.com/@nestorpool?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nestor Pool </a>on
+                                <a href="https://unsplash.com/s/photos/dominican-republic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank"> Unsplash</a>
+                            </figcaption>
+                    </figure>
+                    <img class="this-img" src="images/Dom-Rep/dr-012.webp" style="width:100%" alt="Basilica-Cathedral of Our Lady of Altagracia in Dominican Republic">
+                </div>
+                <div class="column">
+                    <figure>
+                        <img class="this-img" src="images/Dom-Rep/dr-015.webp" style="width:100%" alt="Old town by the sea with cobble stone streets in Samana">
+                            <figcaption>
+                                Photo by <a href="https://unsplash.com/@antovilardo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Antonella Vilardo </a>on
+                                <a href="https://unsplash.com/@antovilardo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank"> Unsplash</a>
+                            </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="this-img" src="images/Dom-Rep/dr-016.webp" style="width:100%" alt="El Salto Limon Waterfall in Samana, Dominican Republic">
+                            <figcaption>
+                                Photo by <a href="https://unsplash.com/@v_labushkin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Valeriy Labushkin </a>on
+                                <a href="https://unsplash.com/s/photos/dominican-republic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank"> Unsplash</a>
+                            </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="this-img" src="images/Dom-Rep/dr-017.webp" style="width:100%" alt="People snorkeling in an eneclosed sea area in Punta Cana">
+                            <figcaption>
+                                Photo by <a href="https://unsplash.com/@jredl?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jared Lisack </a>on
+                                <a href="https://unsplash.com/s/photos/dominican-republic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank"> Unsplash</a>
+                            </figcaption>
+                    </figure>
+                    <figure>
+                        <img class="this-img" src="images/Dom-Rep/dr-018.webp" style="width:100%" alt="Small waterfall into a crystal clear lake in Bonao, Dominican Republic">
+                            <figcaption>
+                                Photo by <a href="https://unsplash.com/@dadodice?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Damian Dominguez </a>on
+                                <a href="https://unsplash.com/s/photos/dominican-republic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank"> Unsplash</a>
+                            </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div id="this-modal" class="modal">
+              <span class="close">&times;</span>
+                <img class="modal-content" id="img-modal-view" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="the alt text of the image that was clicked">
+                <div id="caption"></div>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Luis Tamarez All Rights Reserved</p>
+        </footer>
+    </body>
+</html>

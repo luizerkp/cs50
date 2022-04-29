@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<!--checked and complete everything green as of 08/04/21-->
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Creates the click to reveal effect
+                let myQuestions = document.getElementsByClassName("question");
+                // console.log(myQuestions);
+                for (let i = 0; i < myQuestions.length; i++) {
+                    myQuestions[i].onclick = function () {
+                    let answer = myQuestions[i].value;
+                    // console.log(answer);
+                    let reveal = document.getElementById(answer);
+                    // console.log(reveal);
+                    reveal.style.display = (reveal.style.display != 'block') ? 'block' : 'none';
+                    }; 
+                }
+            });
+        </script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Tips & Tricks</title>
+    </head>
+    <body class="jumbotron jumbotron-fluid">
+        <header>
+            <div class="container" style="margin-bottom:0px">
+                <img id="header" src="images/header_final.png" title="header">
+            </div>
+            <nav>
+                <!-- main nav menu -->
+                <ul class="menu">
+                    <li><a class="nav-bar" href="index.html">Home</a></li>
+                    <li><a class="nav-bar" href="Thai.html">Thailand</a></li>
+                    <li><a class="nav-bar" href="DR.html">Dominican Republic</a></li>
+                    <li><a class="nav-bar" href="Japan.html">Japan</a></li>
+                    <li><a class="nav-bar" href="Mex.html">Mexico</a></li>
+                    <li><a class="nav-bar" href="USA.html">USA</a></li>
+                    <li><a class="nav-bar" href="Tips.html">Tips & Tricks</a></li>
+                    <li><a class="nav-bar" href="Bio.html">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container" style="text-align:center">
+                <h1 class="display-4">Travel FAQ</h1>
+                <hr>
+                <p style="font-style:italic; font-size:.85em">click on the questions to see the answers</p>
+                <div>
+                    <ul id ="myFAQ">
+                        <li>
+                            <button class ="question" value="answer1"><strong>When traveling internationally What do you do first? Buy the airline ticket? or Apply for the visa?</strong></button>
+                            <div id ="answer1" class ="answers">
+                            <p> The answer to this might seem self evident, "why spend money on a ticket without even
+                            even knowing if you'll be allowed to enter your destination country?" However the answer is little more
+                            tricky than that; you definitely want to go over the visa requirements before you even start
+                            planning your trip. If you find that you meet all the requirements you will need to buy a ticket
+                            first as part your application process, note that this is ONLY  true if, you do not get a visa on
+                            arrival. I encourage you to go over to the embassy website of you destination get all the information
+                            before you make any plans.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class ="question" value="answer2"><strong>When should I buy my Ticket?</strong></button>
+                            <div id="answer2" class ="answers">
+                            <p>Depends; if traveling domestically, already have a visa or can get a visa on arrival then as soon as you
+                            you spot a good deal. If traveling internationally however, this will heavily depend on
+                            your visa status and or visa applications requirements. On the other hand you can buy a more expensive
+                            refundable ticket. These tickets allow you to get a refund if need to cancel your flight however make sure to read your particular airline's
+                            refund policy before buying. A good rule of thumb I follow is 2-3 months from my intended date of travel.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class ="question" value="answer3"><strong>how much should I pack?</strong></button>
+                            <div id="answer3" class ="answers">
+                            <p>Short answer: less than you think. You should look at how many days you will be traveling and avoid
+                            bringing extra clothing or items for "just in case". Remember airlines charge a premium for extra weight/baggage, so pack what you need
+                            and only what you need. Also traveling with too much baggage can be a hassle and tiring.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class ="question" value="answer4"><strong>does it matter what day, week or month, I buy my ticket?</strong></button>
+                            <div id="answer4" class ="answers">
+                            <p>According to <a href = "https://www.cheapair.com/blog/the-cheapair-annual-airfare-study-domestic-flights/?AID=11635001&PID=100085079&SID=58287X1516333X65829c1615d32747b8293dc59f8e642a&uid=397&cjevent=33368d09f4a911eb82d10e8e0a1c0e0e"
+                            target="_blank"> cheapair.com, </a>the best day of the week to buy your ticket is Tuesday. The most expensive month to fly is March and the best time frame to
+                            buy your ticket, for the the cheapest fares, is 21 to 95 days before your travel date. Also I have personally experienced that if you fly
+                            between Friday-Monday your ticket will generally be more expensive. You may want to consider flying out on a Tuesday or Wednesday if you can.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class ="question" value="answer5"><strong>What are some things to keep in mind when travelling to Thailand?</strong></button>
+                            <div id="answer5" class ="answers">
+                            <p> While Thailand is not as harsh and draconian as let say N. Korea, there are somethings that are taboo in the country. <br>
+                                Here are the top 5:</p>
+                            <ol class= "list">
+                                <li>Disrespecting the royal family in any way shape or form: While in Thailand you should keep all your comments about the royal family respectful. This is true out
+                                in the streets and online like social media.</li>
+                                <li>Climbing or touching Buddha statues, wearing or using the image of Buddha as decoration on clothing especially if that clothing will touch the floor in anyway...
+                                also tattoos depicting the image of Buddha are a big no no. Just be respectful of Buddha and you will be fine.</li>
+                                <li>Monks take an oath to touch women so if you are woman do not touch monks, even something as simple passing an offering or item to a Monk is not allowed. Also monks are
+                                highly respected in Thailand so treat them respectfully and respect their boundaries.</li>
+                                <li>Excessive PDAs(public displays of affection), while this won't get you in trouble per say it will get you odd looks. A quick peck in the cheek is not a problem but
+                                full on making out in public is frowned upon.</li>
+                                <li>Touching the head of someone older than you or passing something over their head is considered extremely rude.</li>
+                            </ol>
+                            </div>
+                        </li>
+                        <li>
+                            <button class ="question" value="answer6"><strong>Do I need to purchase travel insurance?</strong></button>
+                            <div id="answer6" class ="answers">
+                                <p>When it comes to travel insurance, the decision is up to you; just like car insurance you buy it but hope to never have to use it. If
+                                you want a piece of mind you may purchase a travel insurance plane. They can cover everything from just you ticket to hospitalization or
+                                death. The plans are usually inexpensive can range from few 10USD to few 100USD. It depends on length of stay, age, pre-existing conditions, coverage ect.
+                                The decision is really up to you but if you are traveling within your home country then you don't need it. Traveling internationally it is highly
+                                recommended but not required especially if the credit card you used offers it and you have health insurance. Most health insurance plans cover you
+                                while you travel.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class ="question" value="answer7"><strong>How much cash should I bring?</strong></button>
+                            <div id="answer7" class ="answers">
+                                <p>My rule of thumb is enough to cover incidentals plus some emergency cash (usually around 250USD-500USD). Ideally you want to carry as little cash on your as you
+                                can and make all purchase using credit. Avoid showing a lot of cash in public. Try to have a good credit card that won't gouge you on the exchange rate. Also try
+                                to pre-book all your excursions before you travel or online. If you don't have a good credit card then the goal is to to bring at least 50USD per person per day. You
+                                make use the hotel safe and only carry what you need fo that day. I you don't feel comfortable leaving stuff in the hotel safe then buy anti-theft bag and separate
+                                cash between different locations on your body only keeping a small amount in your pocket.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class ="question" value="answer8"><strong>Where do I exchange my money?</strong></button>
+                            <div id="answer8" class ="answers">
+                                <p>Avoid exchanging money at the airport you will never get the best rates that way. Also try to bring large denominations with you as those give out better rates.
+                                Avoid exchanging all you cash at once and only exchange as you need. Avoid exchanging or withdrawing money in secluded areas. Local exchange places can usually be
+                                reliably found in malls, movie theaters and in some hotels.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class ="question" value="answer9"><strong>how do I get free airline tickets?</strong></button>
+                            <div id="answer9" class ="answers">
+                                <p>The answer is simple by using a credit card with good travel redemption like Chase Sapphire or Amex Platinum and using the points or miles. Sometimes just
+                                the introductory points is enough to buy a ticket. Using those credit cards to pay for all you daily needs and bills and paying off the statement balance on the
+                                due date is a easy and free way to get free tickets and other benefits like free airport lounge access. If you have a decent credit score and are not using a
+                                travel credit cards to make most if not all your purchase then you are leaving hundreds, if not thousands of dollars on the table every year. Just remember
+                                that credit is not supplemental expending power but a cash replacement. If you can't afford it with cash then try not to buy it if you can afford not to.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class ="question" value="answer10"><strong>Where should I travel?</strong></button>
+                            <div id="answer10" class ="answers">
+                                <p>Short Answer: Anywhere; Long Answer: with the advent of youtube and the internet you can virtually travel to any country in the world. If you want to
+                                travel but are not sure where a quick google search or youtube search and you can start checking out all those beautiful and exciting places in the world. I
+                                personally recommend somewhere close like Mexico or a Caribbean Island if living the USA. Another easy place is Puerto Rico, The Virgin Islands and other US territories,
+                                while these are part of the USA, it still gives you the feeling of traveling abroad.</p>
+                            </div>
+                        </li>
+                  </ul>
+              </div>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Luis Tamarez All Rights Reserved</p>
+        </footer>
+    </body>
+</html>

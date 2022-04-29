@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Running times were well below sort2 and sort3 for sorted .txt files, for example sorted 50k for sort 2 was 4.020s and sort3 was 6.572s as oposed to sort1 which was 2.945s. This tracks well with Bubble sort lower bound time complexity of Ω(n).
+
+sort2 uses: Merge Sort
+
+How do you know?: Merge sort has a time complexity of O(nlogn) and Ω(nlogn) and running times for all .txt files, specially sorted vs ramdom files were very close; within a 20% margin. They were lower than both sort1 and sort2 for random files but higher than sort1 and lower than sort2 for sorted files.
+
+sort3 uses: Selection Sort
+
+How do you know?: Running times for all .txt files, specially sorted vs ramdom files were very close; within a 15% margin but higher than sort2 and comparable to sort1. This, accounting for other variables, tracks well with selection sort's time complexity of O(n^2) and Ω(n^2)

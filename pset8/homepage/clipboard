@@ -1,0 +1,16 @@
+        <div style="background-color:#b3b3b3;float:left">
+            <div style="text-align:center">
+              <h2>Wecome to a World of New Adventures!</h2>
+              <hr>
+              <p>The introduction will go here to added later jsjsdkdskskskskskskskskskhahahahahahahah<br>ahahhahahahahahahhahaahahahahahhahahahahahahahahahahahahh</p>
+            </div>
+            <div>
+                <img src="images/Ban Rak Thai.JPG" style="width:33%" alt="image over lake in Ban Rak Thai, Thailand">
+                <img src="images/Chiang Mai Lookout.JPG" style="width:33%" alt="image of a Chiang Mai mountain view">
+                <img src="images/Chichén Itza.JPG" style="width:33%" alt="image of Chichén Itza">
+            </div>
+            <hr>
+            <div class="footer" style="background-color:#b3b3b3">
+                <p>Here will go the footer, or will stay empty</p>
+            </div>
+        </div>

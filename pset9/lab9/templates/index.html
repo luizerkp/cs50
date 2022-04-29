@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Birthdays</title>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1>Birthdays</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+                <h2>Add a Birthday</h2>
+                <!-- form for users to submit a name, a month, and a day -->
+                <form action = "/" method = "POST">
+                    <input type = "text" autofocus autocomplete = "off" name = "name" placeholder = "Name">
+                    <input type = "text" auto-complete = "off" name = "month" placeholder = "Month">
+                    <input type = "text" auto-complete = "off" name = "day" placeholder = "Day">
+                    <button name = "add">Add Birthday</button>
+                </form>
+                <!--flashes messages to the user about a particular action-->
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                    <ul class=flashes>
+                        {% for message in messages %}
+                            <li>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                {% endwith %}
+            </div>
+            <div class="section">
+                <h2>All Birthdays</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Birthday</th>
+                            <th>Delete Birthday?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for birthday in birthdays %}
+                            <tr>
+                                <!--passes birthday.id to the delete funtion in application.py-->
+                                <form action = "{{ url_for('delete', birthday_id = birthday.id) }}" method = "POST">
+                                    <td>{{ birthday.name }}</td>
+                                    <td>{{ birthday.month }}/{{ birthday.day }}</td>
+                                    <td><button name = "delete" value ="delete">Delete</button></td>
+                                </form>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

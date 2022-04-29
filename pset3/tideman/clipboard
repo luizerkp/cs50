@@ -1,0 +1,194 @@
+./tideman a b c
+check50 cs50/problems/2020/x/tideman
+debug50 ./tideman a b c
+winner = candidates[j];
+ if (locked[i][j] == false)
+
+locked[pairs[i].winner][pairs[i].loser] = true;
+sv[v] = preferences[pairs[v].winner][pairs[l].loser] - preferences[pairs[l].loser][pairs[v].winner]
+ int sv[pair_count - 1];
+    for (int v = 0; v < pair_count; v++)
+    {
+        sv[v] = preferences[pairs[v].winner][pairs[v].loser] - preferences[pairs[v].loser][pairs[v].winner];
+    }
+    
+
+
+
+ int arr[pair_count];
+        int temp[pair_count];
+        int l1; // maybe incorporate merge sort with pairs of losers and winners //
+        int l2;
+        int m;
+        int r1;
+        int r2;
+
+        int i, j, k;
+
+
+        for (m = 1; m < pair_count; m = m * 2)
+        {
+            l1 = 0;
+            k = 0;
+            while (l1 + m < pair_count)
+            {
+                r1 = l1 + m - 1;
+                l2 = r1 + 1;
+                r2 = r2 + m - 1;
+                if (r2 >= pair_count)
+                {
+                    r2 = pair_count - 1;
+                }
+                i = l1;
+                j = l2;
+                while (i <= r1 && j <= r2)
+                {
+                    if (arr[i] <= arr[j])
+                        temp[k++] = arr[i++];
+
+                    else
+                        temp[k++] = arr[j++];
+
+
+                }
+                while (i <= r1)
+                    temp[k++] = arr[i++];
+
+
+                while (j <= r2)
+                    temp[k++] = arr[j++];
+
+                l1 = r2 + 1;
+            }
+            for ( i = l1; k < pair_count; i++)
+                temp[k++] = arr[i];
+
+            for(i = 0; i < pair_count; i++)
+                arr[i] = temp[i];
+
+        }
+
+
+
+    int sv[pair_count - 1];
+    for (int v = 0; v < pair_count; v++)
+    {
+            sv[v] = preferences[pairs[v].winner][pairs[v].loser] - preferences[pairs[v].loser][pairs[v].winner];
+        
+    }
+    
+    for (int i = 0; i < pair_count; i++)
+    {
+        for(int j = 0; j < i; j++)
+        {
+            if (sv[i] > sv[j])
+            {
+               
+                pairs[sv[i]].winner = i;
+                
+            }
+           
+        }
+    }
+    
+    
+     int v = 0;
+    for (int i = 0; i < pair_count; i++)
+    {
+        
+        for(int j = 0; j < i; j++)
+        {  
+            int iw = preferences[pairs[i].winner][pairs[i].loser];
+            int il = preferences[pairs[i].loser][pairs[j].winner];
+            int jw = preferences[pairs[j].winner][pairs[j].loser]; 
+            int jl = preferences[pairs[j].loser][pairs[j].winner];
+            
+            if ((iw - il) > (jw - jl))
+            {
+                
+            
+            
+            }
+            else if ((jw - jl) > (iw - il)) 
+            {
+                pairs[v] = pairs[j];
+                v++;
+        
+            }
+           
+     }
+ }
+
+bool cycle (int s, int f, int l)
+{
+    f = locked[f][f];
+    if (f == l)
+    {
+        return true;
+    }
+    for ( int i = 0; i < candidate_count; i++)
+    {
+        if (locked[f][f] == true)
+        {
+            cycle(s, i, f);
+        }
+    }
+    return false;
+}
+
+
+
+    // :) lock_pairs locks all pairs when no cycles still not able to check for cycles //
+    bool locked_winner[candidate_count];
+    for (int l = 0; l < candidate_count; l++)
+    {
+        locked_winner[l] = false;
+    }
+   
+ 
+ 
+ 
+ 
+ 
+ // :( lock_pairs locks all pairs when no cycles //
+ //    lock_pairs did not lock all pairs //
+ // :) lock_pairs skips final pair if it creates cycle //
+ 
+    for (int i = 0; i < pair_count; i++)//
+    {
+        
+        if (!locked[pairs[i].winner][pairs[i].loser] && !locked_winner[pairs[i].loser])
+        {
+            locked[pairs[i].winner][pairs[i].loser] = true;
+            locked_winner[pairs[i].winner] = true;
+            
+        }
+        
+    }
+  
+  
+  for (int i = 0; i < candidate_count; i++)
+    {
+        int j = 0;
+        while (j < candidate_count)
+        {
+            if (locked[i][j] == false)
+            {
+                winner = candidates[j];
+                
+            
+            }
+            if (locked[i][j] == true)
+            {
+                winner = candidates[i];
+                break;
+            }
+            else 
+            {
+                j++;
+            }
+        }
+        
+       
+    }
+   

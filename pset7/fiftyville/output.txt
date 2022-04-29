@@ -1,0 +1,6 @@
+id | city       | city          | hour  | minute
+36 | Fiftyville | London        | 8     | 20
+43 | Fiftyville | Chicago       | 9     | 30
+23 | Fiftyville | San Francisco | 12    | 15
+53 | Fiftyville | Tokyo         | 15    | 20
+18 | Fiftyville | Boston        | 16    | 0

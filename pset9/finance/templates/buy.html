@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+    <form action="/buy" method="post">
+        <div class="form-group">
+            <!-- if stock symbol is empty set value to None-->
+            <input autocomplete="off" id="focus_symbol" class="form-control" name="symbol" placeholder="Symbol" type="text" value = "{{ index_stock_symbol if index_stock_symbol is not none }}">
+        </div>
+        <div class="form-group">
+            <input class="form-control" id="focus_shares" name="shares" placeholder="Shares" type="number" min="1">
+        </div>
+        <button class="btn btn-primary" type="submit">Buy</button>
+    </form>
+{% endblock %}
