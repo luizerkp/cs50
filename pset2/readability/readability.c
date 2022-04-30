@@ -6,7 +6,6 @@
 
 int main(void)
 {
-
     // get text input from user
     char *text = malloc(sizeof(char) * 3072);
     printf("Plaintext (limit: 3000 chars):  ");
