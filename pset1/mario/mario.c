@@ -26,7 +26,6 @@ int main(void)
 // recursively draws pyramid 
 void draw_pyramid(int size, int space)
 {
-    
     if (size == 0)
     {
         return;
@@ -45,6 +44,7 @@ void draw_pyramid(int size, int space)
         printf("#");
     }
     printf("  ");
+
     // right side
     for (int i = 0; i < size; i++)
     {

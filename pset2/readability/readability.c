@@ -1,14 +1,27 @@
 #include <stdio.h>
-#include <cs50.h>
 #include <string.h>
 #include <ctype.h>
 #include <math.h>
+#include <stdlib.h>
 
 int main(void)
 {
 
     // get text input from user
-    string text = get_string("Text: ");
+    char *text = malloc(sizeof(char) * 3072);
+    printf("Plaintext (limit: 3000 chars):  ");
+
+    //store plain text in text variable
+    fgets(text, sizeof(char) * 3072, stdin);
+
+    //remove newline
+    int len = strlen(text);
+
+    if (text[len - 1] == '\n')
+    {
+        text[len - 1] = 0;
+    }
+
     float letter = 0;
     float word = 1;
     float sentence = 0;
@@ -37,10 +50,14 @@ int main(void)
     if (index >= 1 && index <= 16)
         // displays a grade between 1 and 16 on screen
         printf("Grade %i\n", index);
+
     else if (index < 1)
         // displays when grade is lass than 1
         printf("Before Grade 1\n");
+        
     else if (index > 16)
         // displays when grade is above 16
         printf("Grade 16+\n");
+        
+    free(text);
 }

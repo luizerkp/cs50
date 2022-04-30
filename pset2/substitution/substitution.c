@@ -1,11 +1,10 @@
 #include <stdio.h>
-#include <cs50.h>
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
 
 
-int main(int argc, string argv[])
+int main(int argc, char *argv[])
 {
 
     // ensures that no key entered gives an error
@@ -45,8 +44,20 @@ int main(int argc, string argv[])
 
     if (argc == 2)
     {
-        string text = get_string("Plaintext:  ");
-        string ci = text;
+        char *text = malloc(sizeof(char) * 1024);
+        printf("Plaintext (limit: 1,000 chars):  ");
+
+        //store plain text in text variable
+        fgets(text, sizeof(char) * 1024, stdin);
+
+        //remove newline
+        int len = strlen(text);
+        if (text[len - 1] == '\n')
+        {
+            text[len - 1] = 0;
+        }
+
+        char *ci = text;
         int k = atoi(text);
 
         for (int l = 0, c = strlen(text); l < c; l++)
@@ -80,7 +91,8 @@ int main(int argc, string argv[])
         }
         // prints string value stored in ci as an encoded version of the original text, while retaining space, punctuation, letter case and non-alphabetic characters
         printf("ciphertext: %s\n", ci);
-
+        free(text);
     }
+
 
 }

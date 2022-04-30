@@ -1,4 +1,3 @@
-#include <cs50.h>
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
@@ -7,11 +6,10 @@
 int POINTS[] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
 
 // Funciton to compute the value of a string per the POINTS array
-int compute_score(string word);
+int compute_score(char *word);
 
 int main(void)
 {
-
     // Get input word from player 1
     char word1[50];
     printf("Player 1: ");
@@ -42,9 +40,8 @@ int main(void)
 
 }
 // Compute and return score for string
-int compute_score(string word)
+int compute_score(char *word)
 {
-
     int value = 0;
     int convert = 0;
     for (int i = 0, c = strlen(word); i < c; i++)

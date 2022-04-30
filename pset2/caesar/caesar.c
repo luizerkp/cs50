@@ -1,11 +1,10 @@
 #include <stdio.h>
-#include <cs50.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
 
 
-int main(int argc, string argv[])
+int main(int argc, char *argv[])
 {
 
     // prompt user for valid key if none is entered //
@@ -28,9 +27,21 @@ int main(int argc, string argv[])
     // prompt user for plain text to be emciphered //
     if (argc == 2)
     {
-        string text = get_string("Plaintext:  ");
+        char *text = malloc(sizeof(char) * 256);
+        printf("Plaintext:  ");
+
+        //store plain text in text variable
+        fgets(text, sizeof(char) * 256, stdin);
+
+        //remove newline
+        int len = strlen(text);
+        if (text[len - 1] == '\n')
+        {
+            text[len - 1] = 0;
+        }
+
         int k = atoi(argv[1]);
-        string ci = text;
+        char *ci = text;
 
         for (int l = 0, c = strlen(text); l < c; l++)
         {
@@ -43,5 +54,6 @@ int main(int argc, string argv[])
         }
         // display encrypted text //
         printf("ciphertext: %s\n", ci);
+        free(text);
     }
 }
