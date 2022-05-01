@@ -6,7 +6,7 @@ The projects include:
   ### hello
   Simple hello program
   ### mario
-  This Program takes a user input of 1 >= n <= 8 and builds a double pyramid of hashes  ( ***#*** ) whose height is equal to ***n*** 
+  This Program takes user input of ***n >= 1*** and ***n <= 8***, and builds a double pyramid of hashes  ( ***#*** ) whose height is equal to ***n*** 
   ### cash
   This is a program that will take in an input from user of change owed and computes the least amount of coins that can be used 
   to give coin change.
